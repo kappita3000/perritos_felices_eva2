@@ -1,0 +1,158 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+h6{ color: red;}
+header{
+    padding: 20px 30px 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:black;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+}
+
+#tit{
+    font-size: 40px;
+    color: aliceblue;
+}
+
+#opciones>a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#exp{
+    padding: 30 20 30 20;
+    display: flex;
+    justify-content: center;
+  
+}
+
+#cards{
+    margin: 30px;
+}
+
+.modal-body>input{
+    margin: 10px;
+}
+
+
+#pngA{
+    display: flex;
+    justify-content: center;
+}
+
+
+#body{
+    
+    border: 5px #666666 inset;
+    background-color: rgb(59, 58, 58);
+    color: aliceblue;
+    margin: 30px;
+    
+}
+
+#tit2{
+    display: flex;
+    margin: 10px 0px 20px 365px;
+}
+
+#bd2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 20px 20px 20px;
+}
+
+#tablaa{
+    display: flex;
+    margin: 10px 20px 20px 20px ;
+}
+
+
+
+#redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000 ;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+
+#redes>img{
+    display: flex;
+    justify-content: end;
+
+}
+.red{
+    width: 10%;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.red:hover{
+    background-color: #666666;
+    color: #ffffff;
+    transition-duration: 0.5s;
+}
+
+.red>a{
+    color: #ffffff;
+    text-decoration: none;
+    margin: 8px;
+}
+
+#tit1{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#titdos{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#tit3{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+
+#tablaa2{
+    display: flex;
+    margin: 10px 20px 20px 20px ;
+}
+
+#tablaa3{
+    display: flex;
+    margin: 10px 20px 20px 20px ;
+}
+
+#tit4{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#tablaa4{
+    display: flex;
+    margin: 10px 20px 20px 20px ;
+}
+
+
+

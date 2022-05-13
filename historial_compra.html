@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mascotas Felices</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilo_compra.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="funciones.js"></script>
+    <header>    
+      <div id="logo">
+          <img src="IMG/icons8_doggy_bag_50px_1.png" alt="logo">
+      </div>
+      <div id="tit">
+          <h1>Mascotas Felices</h1>
+      </div>
+      <div id="opciones">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <img src="IMG/icons8_user_25px.png" alt=""> login
+          </button>
+
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header" style="background-color: black;" style="color: aliceblue;">
+                          <h5 class="modal-title" id="exampleModalLabel" style="color: aliceblue;"> <img
+                                  src="IMG/icons8_doggy_bag_50px_1.png" alt=""> Bienvenido!</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <label for="si"> ingrese su correo: </label>
+                          <br>
+                          <input type="text" id="si" placeholder="example@example.com">
+                          <h6 id="mesi"></h6>
+                          <br>
+                          <label for="no"> ingrese su contraseña: </label>
+                          <br>
+                          <input type="password" id="no" placeholder="debe ser privada!">
+                          <h6 id="mepass"></h6>
+                          <br>
+                          <a href="" style="text-decoration: none;"> ¿olvido la contraseña?</a>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          <button type="button" class="btn btn-primary">inicar</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+
+          <div class="modal fade" id="registro" tabindex="-1" aria-labelledby="registro" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header" style="background-color: black;" style="color: aliceblue;">
+                          <h5 class="modal-title" id="exampleModalLabel" style="color: aliceblue;"> <img
+                                  src="IMG/icons8_doggy_bag_50px_1.png" alt=""> Bienvenido!</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <label for="si2"> ingrese su correo: </label>
+                          <input type="text" id="si2" placeholder="example@example.com">
+                          <h6 id="mesicreacion"></h6>
+
+                          <label for="u">cree su nombre de usuario: </label>
+                          <input type="text" id="u" placeholder="juanito">
+
+                          <label for="no2">Cree su contraseña: </label>
+                          <input type="password" id="no2" placeholder="debe ser privada!">
+                          <h6 id="mepasscreacion"></h6>
+
+                          <label for="no3">confirme su contraseña: </label>
+                          <input type="password" id="no3" placeholder="...">
+                          <h6 id="mepasscreacion2"></h6>
+
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          <button type="submit" class="btn btn-primary">Guardar</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registro">
+              <img src="IMG/icons8_user_25px.png" alt=""> registrarse
+          </button>
+
+
+
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#canasta">
+              <img src="IMG/icons8_shopping_cart_25px.png" alt="">
+          </button>
+
+
+
+
+          <div class="modal fade" id="canasta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header" style="background-color: black;">
+                          <img src="IMG/icons8_shopping_cart_25px.png" alt="">
+                          <h5 class="modal-title" id="exampleModalLabel" style="color: rgb(255, 255, 255);">canasta
+                          </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <h1>TUS PRODUCTOS!</h1>
+
+                          <label for=""> moño demo 400cc $5.500 </label><input type="number">
+
+                          <label for=""> moño demo 400cc $5.500 </label><input type="number">
+
+                          <label for=""> moño demo 400cc $5.500 </label><input type="number">
+
+                          <label for=""> moño demo 400cc $5.500 </label><input type="number">
+
+                      </div>
+                      <div class="modal-footer">
+                          <label style="margin-right: 100px;"> Total monto: $22.000</label>
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          <a href="carrito_compra.html" class="btn btn-primary"><img
+                            src="IMG/icons8_shopping_cart_25px.png"> <a href="pago.html"></a></button></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </header>
+  <div id="redes">
+    <div class="red">
+        <a href="index.html"><img src="imagenes/iconos/icono-inicio.png"></a>
+        <p><a href="index.html">Inicio</a></p>
+    </div>
+    <div class="red">
+        <a href="perros.html"><img src="imagenes/iconos/icono-perro.png"></a>
+        <p><a href="perros.html">Perros</a></p>
+    </div>
+    <div class="red">
+        <a href="gatos.html"><img src="imagenes/iconos/icono-gato.png"></a>
+        <p><a href="gatos.html">Gatos</a></p>
+    </div>
+    <div class="red">
+        <a href="aves.html"><img src="imagenes/iconos/icono-aves.png"></a>
+        <p><a href="aves.html">Aves</a></p>
+    </div>
+    <div class="red">
+        <a href="peces.html"><img src="imagenes/iconos/icono-peces.png"></a>
+        <p><a href="peces.html">Peces</a></p>
+    </div>
+    <div class="red">
+      <a href="subscripciones.html"><img src="imagenes/iconos/icono-pago.png"></a>
+      <p><a href="subscripciones.html">Donar</a></p>
+    </div>
+    <div class="red">
+      <a href="historial_compra.html"><img src="imagenes/iconos/icono-compra.png"></a>
+      <p><a href="historial_compra.html">Historial Compras</a></p>
+    </div>
+    <div class="red">
+      <a href="crud.html"><img src="imagenes/iconos/icono-crud.png"></a>
+      <p><a href="crud.html">Crud</a></p>
+    </div>
+</div>
+
+ <div id="titulos">
+    <h1>historial  compras</h1>
+ </div> 
+
+ <div class="content">
+    
+    <div class="container">
+      <div class="table-responsive custom-table-responsive">
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr> 
+                <th colspan="9"></th>
+                <th><div class="box">
+                    <div class="container-1">
+                        <span class="icon"><i class="fa fa-search"></i></span>
+                        <input type="search" id="search" placeholder="Search..." />
+                    </div>
+                  </div></th>
+                <th><button type="button" class="btn btn-primary"><img src="imagenes/iconos/icons8 buscar.png" alt=""></button></th>
+                <th> 
+                <div class="btn-group" role="group" aria-label="Basic example">  
+                <button type="button" class="btn btn-primary"><img src="imagenes/iconos/icons8_editar24px.png" alt=""></button>
+                <button type="button" class="btn btn-primary"><img src="imagenes/iconos/icons8 borrar.png" alt=""></button>
+                </div>
+                </th>
+
+            </tr> 
+            <tr>
+              <th scope="col">
+                <label class="control control--checkbox">
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+              
+              <th scope="col"> <button type="button" class="btn btn-primary"> <img src="imagenes/iconos/icons8_seleccionar.png" alt=""></button></th>
+              <th scope="col">#</th>
+              <th scope="col">Estado</th>
+              <th scope="col">Fecha</th>
+              <th scope="col">Producto</th>
+              <th scope="col">Unidad</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Descuento</th>
+              <th scope="col">Total Descuento</th>
+              <th scope="col">Metodo de pago</th>
+              <th scope="col" style="text-align:center">Imagen</th>
+            </tr>   
+          </thead>
+
+          <tbody>
+            <tr scope="row">
+              <th scope="row">
+                <label class="control control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+              <th></th>
+              <th>81234567</th>
+              <th><span id="entregado">Entregado</span></th>
+              <th>3/06/2022</th>
+              <td>Sera Vipachips Nature 250 ML<small class="d-block">Item:P1020 por Sera</small></td>
+              <td>1</td>
+              <td>$11.000</td>
+              <td>5%</td>
+              <td>$10.450</td>
+              <td>Debito</td>
+              <td style="align-items:center"><img src="imagenes/pescao-removebg-preview.png"></td>
+            </tr><tr class="spacer"><td colspan="100"></td></tr>
+
+            <tr scope="row">
+                <th scope="row">
+                  <label class="control control--checkbox">
+                    <input type="checkbox"/>
+                    <div class="control__indicator"></div>
+                  </label>
+                </th>
+                <th></th>
+                <th>3456534</th>
+                <th><span id="entregado">Entregado</span></th>
+                <th>1/06/2022</th>
+                <td>Acana Cat Meadowlands 1.8kg<small class="d-block">Item:205 alimento para gatos premium</small></td>
+                <td>2</td>
+                <td>$22.990</td>
+                <td>15%</td>
+                <td>$19.500</td>
+                <td>Debito</td>
+                <td style="align-items:center"><img src="imagenes/gatoo-removebg-preview.png"></td>
+            </tr><tr class="spacer"><td colspan="100"></td></tr>
+            
+            <tr scope="row">
+                <th scope="row">
+                  <label class="control control--checkbox">
+                    <input type="checkbox"/>
+                    <div class="control__indicator"></div>
+                  </label>
+                </th>
+                <th></th>
+                <th>2344234</th>
+                <th><span id="entregado">Entregado</span></th>
+                <th>29/05/2022</th>
+                <td>Proplan Adulto Razas Medianas (Ex Complete) - 15KG<small class="d-block">Item:2025 alimento para perros premium</small></td>
+                <td>1</td>
+                <td>$59.990</td>
+                <td>20%</td>
+                <td>$47.990</td>
+                <td>Debito</td>
+                <td style="align-items:center"><img src="imagenes/perroo-removebg-preview.png"></td>
+            </tr><tr class="spacer"><td colspan="100"></td></tr>
+
+            <tr scope="row">
+                <th scope="row">
+                  <label class="control control--checkbox">
+                    <input type="checkbox"/>
+                    <div class="control__indicator"></div>
+                  </label>
+                </th>
+                <th></th>
+                <th>3456674</th>
+                <th><span id="entregado">Entregado</span></th>
+                <th>15/04/2022</th>
+                <td>Juguete Dental con Cuerda Kong<small class="d-block">Item:312 red color </small></td>
+                <td>1</td>
+                <td>$15.990	</td>
+                <td>10%</td>
+                <td>$14.500</td>
+                <td>Debito</td>
+                <td style="align-items:center"><img src="imagenes/toy_dog-removebg-preview.png"></td>
+            </tr><tr class="spacer"><td colspan="100"></td></tr>
+            
+            <tr scope="row">
+                <th scope="row">
+                  <label class="control control--checkbox">
+                    <input type="checkbox"/>
+                    <div class="control__indicator"></div>
+                  </label>
+                </th>
+                <th></th>
+                <th>9784532</th>
+                <th><span id="cancelado">Cancelado</span></th>
+                <th>10/03/2022</th>
+                <td>MPets Pack Plantas Decorativas Acuario<small class="d-block">Item:123 water seccion </small></td>
+                <td>2</td>
+                <td>$13.000	</td>
+                <td>25%</td>
+                <td>$9.750</td>
+                <td>Debito</td>
+                <td style="align-items:center"><img src="imagenes/planta-removebg-preview.png"></td>
+            </tr><tr class="spacer"><td colspan="100"></td></tr>
+
+            <tr scope="row">
+              <th scope="row">
+                <label class="control control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+              <th></th>
+              <th>345143</th>
+              <th><span id="entregado">Entregado</span></th>
+              <th>9/03/2022</th>
+              <td>Coastal glow in the Dark collar skulls<small class="d-block">Item:1213 black skull </small></td>
+              <td>2</td>
+              <td>$9.000	</td>
+              <td>5%</td>
+              <td>$8.550</td>
+              <td>Debito</td>
+              <td style="align-items:center"><img src="imagenes/collarnegro-removebg-preview.png"></td>
+            </tr><tr class="spacer"><td colspan="100"></td></tr>
+
+          <tr scope="row">
+            <th scope="row">
+              <label class="control control--checkbox">
+                <input type="checkbox"/>
+                <div class="control__indicator"></div>
+              </label>
+            </th>
+            <th></th>
+            <th>5234245</th>
+            <th><span id="entregado">Entregado</span></th>
+            <th>4/03/2022</th>
+            <td>FELINNES PREMIUM ADULTO SALMON 20KG<small class="d-block">Item:205 alimento para gatos premium </small></td>
+            <td>1</td>
+            <td>$12.000	</td>
+            <td>5%</td>
+            <td>$11.400</td>
+            <td>Debito</td>
+            <td style="align-items:center"><img src="imagenes/gato_2-removebg-preview.png"></td>
+            </tr><tr class="spacer"><td colspan="100"></td></tr>
+
+          <tr scope="row">
+              <th scope="row">
+                <label class="control control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+              <th></th>
+              <th>379181</th>
+              <th><span id="cancelado">Cancelado</span></th>
+              <th>1/03/2022</th>
+              <td>COLLAR PARA PERROS PETMATE AJUSTABLE DE NYLON AZUL 30cm<small class="d-block">Item:121233 blue  </small></td>
+              <td>1</td>
+              <td>$8.000	</td>
+              <td>10%</td>
+              <td>$7.200</td>
+              <td>Debito</td>
+              <td style="align-items:center"><img src="imagenes/collar_azul-removebg-preview.png"></td>
+            </tr><tr class="spacer"><td colspan="100"></td></tr>
+
+            <tr scope="row">
+              <th scope="row">
+                <label class="control control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+              <th></th>
+              <th>237894</th>
+              <th><span id="entregado">Entregado</span></th>
+              <th>28/02/2022</th>
+              <td>Champion Dog - Galletas Adulto Clásica<small class="d-block">Item:1289 dog food  </small></td>
+              <td>5</td>
+              <td>$1.200	</td>
+              <td>20%</td>
+              <td>$950</td>
+              <td>Debito</td>
+              <td style="align-items:center"><img src="imagenes/chapiondog-removebg-preview.png"></td>
+            </tr><tr class="spacer"><td colspan="100"></td></tr>
+
+            <tr scope="row">
+              <th scope="row">
+                <label class="control control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+              <th></th>
+              <th>82312</th>
+              <th><span id="entregado">Entregado</span></th>
+              <th>18/02/2022</th>
+              <td>Juguete Para Perro Mimo Pina Goma 11cm PP146<small class="d-block">Item:21983 toy  </small></td>
+              <td>1</td>
+              <td>$3.000	</td>
+              <td>50%</td>
+              <td>$1.500</td>
+              <td>Debito</td>
+              <td style="align-items:center"><img src="imagenes/piña-removebg-preview.png"></td>
+            </tr><tr class="spacer"><td colspan="100"></td></tr>   
+            
+            <tr scope="row">
+              <th scope="row">
+                <label class="control control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+              <th></th>
+              <th>234121</th>
+              <th><span id="entregado">Entregado</span></th>
+              <th>18/02/2022</th>
+              <td>Tropican Mantención Ninfa 820 Grs<small class="d-block">Item:21w02a bird food  </small></td>
+              <td>1</td>
+              <td>$13.000	</td>
+              <td>10%</td>
+              <td>$11.700</td>
+              <td>Debito</td>
+              <td style="align-items:center"><img src="imagenes/pajaro-removebg-preview.png"></td>
+            </tr><tr class="spacer"><td colspan="100"></td></tr>             
+
+
+          </tbody>
+        </table>
+        
+    </div>
+    <div id="cambiar_seccion">
+
+            <nav aria-label="Page navigation example">
+                 <ul class="pagination">
+                   <li class="page-item">
+                     <a class="page-link" href="#" aria-label="Previous">
+                       <span aria-hidden="true">&laquo;</span>
+                       <span class="sr-only">Previous</span>
+                     </a>
+                   </li>
+                   <li class="page-item"><a class="page-link" href="#">1</a></li>
+                   <li class="page-item"><a class="page-link" href="#">2</a></li>
+                   <li class="page-item"><a class="page-link" href="#">3</a></li>
+                   <li class="page-item">
+                     <a class="page-link" href="#" aria-label="Next">
+                       <span aria-hidden="true">&raquo;</span>
+                       <span class="sr-only">Next</span>
+                     </a>
+                   </li>
+                 </ul>
+               </nav>
+  
+    </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mascotas Felices</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilo_carro_compra.css">
+
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="funciones.js"></script>
+    <header>    
+      <div id="logo">
+          <img src="IMG/icons8_doggy_bag_50px_1.png" alt="logo">
+      </div>
+      <div id="tit">
+          <h1>Mascotas Felices</h1>
+      </div>
+      <div id="opciones">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <img src="IMG/icons8_user_25px.png" alt=""> login
+          </button>
+
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header" style="background-color: black;" style="color: aliceblue;">
+                          <h5 class="modal-title" id="exampleModalLabel" style="color: aliceblue;"> <img
+                                  src="IMG/icons8_doggy_bag_50px_1.png" alt=""> Bienvenido!</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <label for="si"> ingrese su correo: </label>
+                          <br>
+                          <input type="text" id="si" placeholder="example@example.com">
+                          <h6 id="mesi"></h6>
+                          <br>
+                          <label for="no"> ingrese su contraseña: </label>
+                          <br>
+                          <input type="password" id="no" placeholder="debe ser privada!">
+                          <h6 id="mepass"></h6>
+                          <br>
+                          <a href="" style="text-decoration: none;"> ¿olvido la contraseña?</a>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          <button type="button" class="btn btn-primary">inicar</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+
+          <div class="modal fade" id="registro" tabindex="-1" aria-labelledby="registro" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header" style="background-color: black;" style="color: aliceblue;">
+                          <h5 class="modal-title" id="exampleModalLabel" style="color: aliceblue;"> <img
+                                  src="IMG/icons8_doggy_bag_50px_1.png" alt=""> Bienvenido!</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <label for="si2"> ingrese su correo: </label>
+                          <input type="text" id="si2" placeholder="example@example.com">
+                          <h6 id="mesicreacion"></h6>
+
+                          <label for="u">cree su nombre de usuario: </label>
+                          <input type="text" id="u" placeholder="juanito">
+
+                          <label for="no2">Cree su contraseña: </label>
+                          <input type="password" id="no2" placeholder="debe ser privada!">
+                          <h6 id="mepasscreacion"></h6>
+
+                          <label for="no3">confirme su contraseña: </label>
+                          <input type="password" id="no3" placeholder="...">
+                          <h6 id="mepasscreacion2"></h6>
+
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          <button type="submit" class="btn btn-primary">Guardar</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registro">
+              <img src="IMG/icons8_user_25px.png" alt=""> registrarse
+          </button>
+
+
+
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#canasta">
+              <img src="IMG/icons8_shopping_cart_25px.png" alt="">
+          </button>
+
+
+
+
+          <div class="modal fade" id="canasta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header" style="background-color: black;">
+                          <img src="IMG/icons8_shopping_cart_25px.png" alt="">
+                          <h5 class="modal-title" id="exampleModalLabel" style="color: rgb(255, 255, 255);">canasta
+                          </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <h1>TUS PRODUCTOS!</h1>
+
+                          <label for=""> moño demo 400cc $5.500 </label><input type="number">
+
+                          <label for=""> moño demo 400cc $5.500 </label><input type="number">
+
+                          <label for=""> moño demo 400cc $5.500 </label><input type="number">
+
+                          <label for=""> moño demo 400cc $5.500 </label><input type="number">
+
+                      </div>
+                      <div class="modal-footer">
+                          <label style="margin-right: 100px;"> Total monto: $22.000</label>
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          <a href="carrito_compra.html" class="btn btn-primary"><img
+                          src="IMG/icons8_shopping_cart_25px.png"> <a href="pago.html"></a></button></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </header>
+  <div id="redes">
+    <div class="red">
+        <a href="index.html"><img src="imagenes/iconos/icono-inicio.png"></a>
+        <p><a href="index.html">Inicio</a></p>
+    </div>
+    <div class="red">
+        <a href="perros.html"><img src="imagenes/iconos/icono-perro.png"></a>
+        <p><a href="perros.html">Perros</a></p>
+    </div>
+    <div class="red">
+        <a href="gatos.html"><img src="imagenes/iconos/icono-gato.png"></a>
+        <p><a href="gatos.html">Gatos</a></p>
+    </div>
+    <div class="red">
+        <a href="aves.html"><img src="imagenes/iconos/icono-aves.png"></a>
+        <p><a href="aves.html">Aves</a></p>
+    </div>
+    <div class="red">
+        <a href="peces.html"><img src="imagenes/iconos/icono-peces.png"></a>
+        <p><a href="peces.html">Peces</a></p>
+    </div>
+    <div class="red">
+      <a href="subscripciones.html"><img src="imagenes/iconos/icono-pago.png"></a>
+      <p><a href="subscripciones.html">Donar</a></p>
+    </div>
+    <div class="red">
+      <a href="historial_compra.html"><img src="imagenes/iconos/icono-compra.png"></a>
+      <p><a href="historial_compra.html">Historial Compras</a></p>
+    </div>
+    <div class="red">
+      <a href="crud.html"><img src="imagenes/iconos/icono-crud.png"></a>
+      <p><a href="crud.html">Crud</a></p>
+    </div>
+</div> 
+
+  <div id="titulos">
+    <h1>Carrito de compras</h1>
+ </div> 
+
+ <div class="content">
+    
+    <div class="container">
+      <div class="table-responsive custom-table-responsive">
+        <table class="table table-dark table-striped">
+          
+          <thead>
+            <tr>             
+              <th scope="col">Imagen</th>
+              <th scope="col">Producto</th>
+              <th scope="col">Precio</th>             
+              <th scope="col">Cantidad</th>
+              <th scope="col">Descuento</th>
+              <th scope="col">Total</th>
+              <th scope="col">Fecha Compra</th>
+              <th scope="col">Fecha Llegada</th>
+              <th scope="col">Eliminar</th>
+            </tr>   
+          </thead>
+
+          <tbody>
+            <tr scope="row">
+              <th><img src="imagenes/pescao-removebg-preview.png"></th>
+              <td>Sera Vipachips Nature 250 ML<small class="d-block">Item:P1020 por Sera</small></td>
+              <th>$11.000</th>
+              <td class="quantity"><div class="input-group" style="width: auto"><input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100"></div></td>
+              <th>5%</th> 
+              <td>$10.450</td>
+              <td>2/06/2022	1:30 PM</td>
+              <td>3/06/2022	</td>
+              <td><button type="button" class="btn btn-primary"><img src="imagenes/iconos/icons8 borrar.png" alt=""></button></td>           
+              </tr><tr class="spacer"><td colspan="100"></td></tr>
+            <tr scope="row">
+                <th><img src="imagenes/gatoo-removebg-preview.png"></th>
+                <td>Acana Cat Meadowlands 1.8kg<small class="d-block">Item:205 alimento para gatos premium</small></td>
+                <th>$22.990	</th>
+                <td class="quantity"><div class="input-group" style="width: auto"><input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100"></div></td>
+                <th>15%</th> 
+                <td>$19.500</td>
+                <td>1/06/2022	1:30 PM</td>
+                <td>2/06/2022	</td>
+                <td><button type="button" class="btn btn-primary"><img src="imagenes/iconos/icons8 borrar.png" alt=""></button></td>           
+              </tr><tr class="spacer"><td colspan="100"></td></tr>              
+            <tr scope="row">
+                <th><img src="imagenes/perroo-removebg-preview.png"></th>
+                <td>Proplan Adulto Razas Medianas (Ex Complete) - 15KG<small class="d-block">Item:2025 alimento para perros premium</small></td>
+                <th>$59.990	</th>
+                <td class="quantity"><div class="input-group" style="width: auto"><input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100"></div></td>
+                <th>20%</th> 
+                <td>$47.990</td>
+                <td>29/05/2022	2:30 PM</td>
+                <td>30/06/2022</td>
+                <td><button type="button" class="btn btn-primary"><img src="imagenes/iconos/icons8 borrar.png" alt=""></button></td>           
+              </tr><tr class="spacer"><td colspan="100"></td></tr>
+          </tbody>
+        </table>
+        
+    </div>
+    </div>
+    </div>
+<div class="total">
+    <div class="container2">
+        <section>
+            <table class="table table-dark table-striped" >
+                <tfoot>
+                    <tr>
+                      <th colspan="6"></th>
+                      <th> Monto Total :</th>
+                      <th>$77.940</th>
+                      <td><a href="pago.html" class="btn btn-primary">Pagar</a></td>
+                      
+                    </tr>
+                  </tfoot>
+               
+            </table>
+        </section>
+    </div>
+</div>
+
+<div id="footer">
+    <div id="letra">
+        <div id="logopie">
+            <h1 >Mascotas Felices</h1>
+        </div>
+        <div id="menupie">
+            <li><a href="#"></a>Contactanos</li>
+            <li><a href="#"></a>Sobre Nosotros</li>
+            <li><a href="#"></a>ver Producto</li>
+        </div>
+    </div>
+    <div id="webpay">
+        <img src="https://www.pethome.cl/img/webpay.png" alt="">
+    </div>
+</div>
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>siiii</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="subs.style.css">
+</head>
+
+<body style="background-color: #757575 ">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="funciones.js"></script>
+    <header>
+        <div id="logo">
+            <img src="IMG/icons8_doggy_bag_50px_1.png" alt="logo">
+        </div>
+        <div id="tit">
+            <h1>Mascotas Felices</h1>
+        </div>
+        <div id="opciones">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="IMG/icons8_user_25px.png" alt=""> login
+            </button>
+
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: black;" style="color: aliceblue;">
+                            <h5 class="modal-title" id="exampleModalLabel" style="color: aliceblue;"> <img
+                                    src="IMG/icons8_doggy_bag_50px_1.png" alt=""> Bienvenido!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <label for="si"> ingrese su correo: </label>
+                            <br>
+                            <input type="text" id="si" placeholder="example@example.com">
+                            <h6 id="mesi"></h6>
+                            <br>
+                            <label for="no"> ingrese su contraseña: </label>
+                            <br>
+                            <input type="password" id="no" placeholder="debe ser privada!">
+                            <h6 id="mepass"></h6>
+                            <br>
+                            <a href="" style="text-decoration: none;"> ¿olvido la contraseña?</a>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">inicar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="modal fade" id="registro" tabindex="-1" aria-labelledby="registro" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: black;" style="color: aliceblue;">
+                            <h5 class="modal-title" id="exampleModalLabel" style="color: aliceblue;"> <img
+                                    src="IMG/icons8_doggy_bag_50px_1.png" alt=""> Bienvenido!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <label for="si2"> ingrese su correo: </label>
+                            <input type="text" id="si2" placeholder="example@example.com">
+                            <h6 id="mesicreacion"></h6>
+
+                            <label for="u">cree su nombre de usuario: </label>
+                            <input type="text" id="u" placeholder="juanito">
+
+                            <label for="no2">Cree su contraseña: </label>
+                            <input type="password" id="no2" placeholder="debe ser privada!">
+                            <h6 id="mepasscreacion"></h6>
+
+                            <label for="no3">confirme su contraseña: </label>
+                            <input type="password" id="no3" placeholder="...">
+                            <h6 id="mepasscreacion2"></h6>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="submit" class="btn btn-primary">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registro">
+                <img src="IMG/icons8_user_25px.png" alt=""> registrarse
+            </button>
+
+
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#canasta">
+                <img src="IMG/icons8_shopping_cart_25px.png" alt="">
+            </button>
+
+
+
+
+            <div class="modal fade" id="canasta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: black;">
+                            <img src="IMG/icons8_shopping_cart_25px.png" alt="">
+                            <h5 class="modal-title" id="exampleModalLabel" style="color: rgb(255, 255, 255);">canasta
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h1>TUS PRODUCTOS!</h1>
+
+                            <label for=""> moño demo 400cc $5.500 </label><input type="number">
+
+                            <label for=""> moño demo 400cc $5.500 </label><input type="number">
+
+                            <label for=""> moño demo 400cc $5.500 </label><input type="number">
+
+                            <label for=""> moño demo 400cc $5.500 </label><input type="number">
+
+                        </div>
+                        <div class="modal-footer">
+                            <label style="margin-right: 100px;"> Total monto: $22.000</label>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <a href="carrito_compra.html" class="btn btn-primary"><img
+                                    src="IMG/icons8_shopping_cart_25px.png"> <a href="pago.html"></a></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div id="redes">
+        <div class="red">
+            <a href="index.html"><img src="IMG/icons8_home_25px.png"> Inicio</a>
+        </div>
+        <div>
+            <a href="#"> <img src="IMG/icons8_facebook_25px.png">Facebook</a>
+        </div>
+
+        <div>
+            <a href="#"> <img src="IMG/icons8_Instagram_25px.png"> Instagram</a>
+        </div>
+
+        <div>
+            <a href="#"> <img src="IMG/icons8_whatsapp_25px.png"> Whatsapp</a>
+        </div>
+
+        <div>
+            <a href="#"> <img src="IMG/icons8_phone_25px.png"> Contactanos</a>
+        </div>
+
+    </div>
+
+
+
+    <div id="pngA">
+        <img src="https://364982.smushcdn.com/2496949/wp-content/uploads/2021/09/pets-dog-turtle-bird.png?lossy=1&strip=1&webp=1"
+            class="img-fluid" alt="...">
+    </div>
+
+    <div id="titulo2">
+        <h1>DONACIONES</h1>
+        <img src="IMG/icons8_vertical_line_50px_2.png">
+        <h2>para un mejor techo para ellos</h2>
+    </div>
+    <div id="cartas">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="IMG/logo_ayuda.png" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor vero, laboriosam
+                    facilis, culpa ratione eligendi doloremque assumenda aliquid nemo, consequuntur eius aperiam quia
+                    nesciunt vel.</p>
+                <br>
+                <label for="m"> ¡Pinche aqui si desea estar subscrito!</label>
+                <input type="checkbox" id="m">
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="IMG/logo_ayuda.png" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe unde tenetur vero
+                    nostrum modi exercitationem iusto reiciendis suscipit facilis quos!</p>
+                <br>
+                <label for="mm"> ¡Pinche aqui si desea estar subscrito!</label>
+                <input type="checkbox" id="mm">
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="IMG/logo_ayuda.png" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi
+                    consectetur autem pariatur suscipit eligendi earum, delectus placeat facilis harum repudiandae vel?
+                </p>
+                <br>
+                <label for="mm"> ¡Pinche aqui si desea estar subscrito!</label>
+                <input type="checkbox" id="mmm">
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="cuadros">
+        <div id="datosT">
+            <div id="imgpay">
+                <img src="https://www.pethome.cl/img/webpay.png" alt="...">
+            </div>
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                    <div class="valid-feedback">
+                        Valido!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                    <div class="valid-feedback">
+                        Valido!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustomUsername" class="form-label">Pin de seguridad</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">cvc</span>
+                        <input type="text" class="form-control" id="validationCustomUsername"
+                            aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Invalido!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationCustom03" class="form-label">N° tarjeta</label>
+                    <input type="text" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid city.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom04" class="form-label">Region</label>
+                    <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">...</option>
+                        <option>Región Metropolitana de Santiago.</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a valid state.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom05" class="form-label">Codigo postal</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid zip.
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
+                        Acepta los terminos y condiciones.
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
+                        Desea estar subscrito y participar con donaciones?
+                        </label>
+                    </div>
+                </div>
+                <div id="botonesC">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button class="btn btn-primary" type="submit">finalizar subcripcion</button>
+                </div>
+            </form>
+            <br>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Passions+Conflict&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+header{
+    padding: 20px 30px 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#000000;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+}
+
+#tit{
+    color: #ffffff;
+    font-family: 'Caveat', cursive;
+
+    margin: 0px 0px 0px 50px;
+}
+
+#opciones>a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+
+#redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000 ;
+    padding: 5px;
+    color: white;
+}
+
+
+#redes>img{
+    display: flex;
+    justify-content: end;
+
+}
+.red{
+    width: 10%;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.red:hover{
+    background-color: #666666;
+    color: #ffffff;
+    transition-duration: 0.5s;
+}
+
+.red>a{
+    color: #ffffff;
+    text-decoration: none;
+    margin: 8px;
+}
+
+.red>p>a{
+    color: #ffffff;
+    text-decoration: none;
+    margin: 8px;
+}
+
+a>img{
+    padding-bottom: 10px;
+}
+p>a{
+    text-decoration: none;
+    color: #ffffff;
+    justify-content: center;
+}
+#productos{
+    margin: 30px;
+}
+
+#intermedio-perros{
+    display: flex;
+    justify-content: center;
+}
+
+#productos>h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Caveat', cursive;
+    font-size: 60px;
+}
+
+#productos>h4{
+    display: flex;
+    justify-content: center;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    margin: 20px;
+}
+
+#productos>a{
+    justify-content: flex-end;
+}
+
+#pagina_act{
+    margin: 10px 0px 0px 30px;
+}
+
+#intermedio{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#contenido{
+    display: flex;
+    justify-content: center;
+}
+
+#registro>h1{
+    font-family: 'Caveat', cursive;
+    font-size: 60px;
+}
+
+#registro{
+    padding: 5% 20% 5% 20%;
+}
+
+@media (min-width: 1250px) {  
+    .card-body>p1{
+        display: none;
+    }
+
+}
+
+@media (max-width: 1250px) {
+    .card-body>p{
+        display: none;
+    }
+ }
+
+@media (max-width: 950px) {
+    .red > p {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .card-body>p{
+        display: none;
+    }
+    .card-body>p1{
+        display: none;
+    }
+}
+
+@media (max-width: 670px) {
+    #tit{
+        display: none;
+    }
+    
+}
